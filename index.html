@@ -3,16 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora 50%</title>
+    <title>Calculadora de Porcentagem</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div class="container">
-        <h1>Calculadora 50%</h1>
+        <h1>Calculadora de Porcentagem</h1>
+        
         <div class="input-container">
             <input type="number" id="valor" placeholder="Digite o valor">
         </div>
+        
+        <div class="select-container">
+            <label for="porcentagem">Escolha a porcentagem:</label>
+            <select id="porcentagem">
+                <option value="0.45">45%</option>
+                <option value="0.50" selected>50%</option>
+                <option value="0.55">55%</option>
+                <option value="0.60">60%</option>
+                <option value="0.75">75%</option>
+            </select>
+        </div>
+
         <button onclick="calcular()">Calcular</button>
+        
         <div id="resultado" class="resultado">Resultado: </div>
     </div>
 

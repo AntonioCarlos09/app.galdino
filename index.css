@@ -39,6 +39,22 @@ h1 {
     color: white;
 }
 
+.select-container {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    border: 1px solid #444;
+}
+
 button {
     width: 100%;
     padding: 10px;
