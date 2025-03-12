@@ -16,11 +16,11 @@ body {
 
 .container {
     text-align: center;
-    width: 100%;
+    width: 150%;
     max-width: 350px;
     padding: 20px;
     background-color: #1e1e1e;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -40,11 +40,13 @@ h1 {
 }
 
 button {
-    width: 100%;
+    
+    margin-right: 180px;
+    width: 50%;
     padding: 10px;
-    margin-top: 20px;
-    font-size: 18px;
-    background-color: #6200ea;
+    margin-top: 10px;
+    font-size: 16px;
+    background-color: #013508;
     color: white;
     border: none;
     border-radius: 5px;
@@ -52,8 +54,27 @@ button {
     transition: background-color 0.3s;
 }
 
+button2 {
+    width: 50%;
+    padding: 10px;
+    left: 150px;
+    margin-left: 180px;
+    font-size: 16px;
+    background-color: #e2ad0093;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+
+button2:hover {
+    background-color: #b3890085;
+}
+
 button:hover {
-    background-color: #3700b3;
+    background-color: #0135089f;
 }
 
 .resultado {
@@ -61,3 +82,32 @@ button:hover {
     font-size: 22px;
     font-weight: bold;
 }
+
+.resultado2 {
+margin-top: 5px;
+margin-left: 15px;
+font-size: 22px;
+font-weight: bold;
+}
+
+.resultado3 {
+margin-top: 5px;
+font-size: 22px;
+font-weight: bold;
+}
+
+.resultado4 {
+    margin-top: 5px;
+    font-size: 22px;
+    margin-left: 59px;
+    font-weight: bold;
+}
+
+.resultado5 {
+        margin-top: 5px;
+        font-size: 22px;
+        font-weight: bold;
+        margin-left: 40px;
+    }
+
+
