@@ -49,5 +49,5 @@ function backspace() {
     // Remove o último caractere do visor
     display.value = display.value.slice(0, -1);
     // Reformatar novamente após apagar
-    display.value = formatNumber(display.value);
+    display.value = formatNumber(display.value)
 }
