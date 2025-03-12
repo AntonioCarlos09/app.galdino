@@ -1,123 +1,63 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos do body */
 body {
-    background-color: #121212;
-    font-family: 'SamsungOne', Arial, sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Cor do fundo em modo escuro */
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
 }
 
-/* Estilo da calculadora */
-.calculator {
+.container {
+    text-align: center;
     width: 100%;
-    max-width: 380px;
-    background-color: #222222;
-    border-radius: 20px;
+    max-width: 350px;
     padding: 20px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-}
-
-/* Display da calculadora */
-.display {
-    width: 100%;
-    height: 80px;
-    background-color: #333333;
-    color: white;
-    font-size: 3rem;
-    text-align: right;
-    padding: 20px;
-    border: none;
-    border-radius: 15px;
-    margin-bottom: 20px;
-    word-wrap: break-word;
-}
-
-/* Estilo dos botões */
-.buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-}
-
-/* Estilo comum dos botões */
-.btn {
-    background-color: #3e3e3e;
-    color: white;
-    font-size: 2rem;
-    border: none;
-    padding: 25px;
-    border-radius: 15px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    background-color: #1e1e1e;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Hover nos botões */
-.btn:hover {
-    background-color: #555555;
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
-/* Botões de operadores */
-.operator {
-    background-color: #ff9500;
-    color: #ffffff;
-}
-
-.operator:hover {
-    background-color: #ff7f00;
-}
-
-/* Botão de igual */
-.equals {
-    background-color: #00bcd4;
-    grid-column: span 2;
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #333;
     color: white;
 }
 
-.equals:hover {
-    background-color: #0097a7;
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-/* Botão de limpar */
-.clear {
-    background-color: #d32f2f;
-    grid-column: span 4;
-    margin-top: 10px;
-    font-size: 2rem;
+button:hover {
+    background-color: #3700b3;
 }
 
-.clear:hover {
-    background-color: #c2185b;
-}
-
-/* Botão de backspace */
-.backspace {
-    background-color: #ffa500;
-    grid-column: span 2;
-}
-
-.backspace:hover {
-    background-color: #ff8c00;
-}
-
-/* Responsividade para telas menores */
-@media screen and (max-width: 480px) {
-    .display {
-        font-size: 2.5rem;
-        height: 70px;
-    }
-    .btn {
-        font-size: 1.8rem;
-        padding: 18px;
-    }
+.resultado {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
 }
