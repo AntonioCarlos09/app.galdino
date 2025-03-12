@@ -56,8 +56,13 @@ button:hover {
     background-color: #3700b3;
 }
 
-.resultado {
+.resultados {
     margin-top: 20px;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
+    text-align: left;
+}
+
+.resultado-item {
+    margin-bottom: 10px;
 }
