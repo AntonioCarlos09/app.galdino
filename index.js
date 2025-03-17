@@ -2,6 +2,7 @@ function calcular2() {
     const valor = parseFloat(document.getElementById('valor').value);
 
     if (!isNaN(valor)) {
+<<<<<<< HEAD
         const resultado = valor + (valor * 0.45); // Soma 45% do valor
         const resultado2 = valor + (valor * 0.50); // Soma 50% do valor
         const resultado3 =  valor + (valor * 0.55); // Soma 55% do valor
@@ -26,6 +27,23 @@ function calcular2() {
         document.getElementById('resultado4').textContent = ' ';
         document.getElementById('resultado5').textContent = ' ';
         
+=======
+        const porcentagens = [0.45, 0.50, 0.55, 0.60, 0.75];
+        let resultadosHtml = '';
+
+        porcentagens.forEach(porcentagem => {
+            const resultado = valor + (valor * porcentagem);
+            resultadosHtml += `
+                <div class="resultado-item">
+                    <strong>${(porcentagem * 100).toFixed(0)}%</strong>: R$ ${resultado.toFixed(2)}
+                </div>
+             `;
+        });
+
+        document.getElementById('resultados').innerHTML = resultadosHtml;
+    } else {
+        document.getElementById('resultados').innerHTML = 'Por favor, insira um valor válido!';
+>>>>>>> bea4d0b2c61cfdf547a6e96a8f083df49f9b5bf2
     }
 
 }

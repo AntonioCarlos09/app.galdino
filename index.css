@@ -77,12 +77,14 @@ button:hover {
     background-color: #0135089f;
 }
 
-.resultado {
+.resultados {
     margin-top: 20px;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
+    text-align: left;
 }
 
+<<<<<<< HEAD
 .resultado2 {
 margin-top: 5px;
 margin-left: 15px;
@@ -111,3 +113,9 @@ font-weight: bold;
     }
 
 
+=======
+.resultado-item {
+    margin-bottom: 10px;
+}
+
+>>>>>>> bea4d0b2c61cfdf547a6e96a8f083df49f9b5bf2
